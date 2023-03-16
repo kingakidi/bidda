@@ -132,7 +132,7 @@ createApp({
               this.currentPaymentBid = res.data.data[0];
 
               FlutterwaveCheckout({
-                public_key: "FLWPUBK_TEST-3a6c05fb0886a4797400d1def006fcef-X",
+                public_key: "",
                 tx_ref:
                   this.currentPaymentBid.product_name +
                   this.currentPaymentBid.user_id,
