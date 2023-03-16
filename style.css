@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-image: url("./background.jpg");
+  /* Full height */
+  height: 100%;
+  font-family: "Poppins", sans-serif !important;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#input {
+  padding-left: 20px;
+}
+
+.error {
+  visibility: hidden;
+  height: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+sup {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#trade {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  widows: 500px;
+  background-color: white;
+}
+#countries {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lines {
+  display: flex;
+  height: 20px;
+  /* background-color: red; */
+  justify-content: space-evenly;
+}
+
+.lines div {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.lines div .circle {
+  background-color: blue;
+  border-radius: 50%;
+  flex: 1;
+}
+
+.lines div :not(.circle) {
+  background-color: yellow;
+}
+
+/* LOGIN STYLING  */
+
+#login-container,
+#signup-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#login,
+#signup {
+  width: 400px;
+  padding: 30px;
+  background-color: #e6b043;
+  margin: 30px auto;
+  border-radius: 7px;
+}
+
+#btn-login,
+#btn-submit {
+  background-color: #8d078e;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login-header,
+.signup-header {
+  color: #8d078e;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.signup-error {
+  visibility: hidden;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* JUMGA BUTTON  */
+
+.btn-jumga {
+  color: #fff !important;
+  background-color: #8d078e;
+  border-color: #cf71cf;
+}
+
+.btn-jumga:hover {
+  color: #fff !important;
+  background-color: #8d078e;
+  border-color: #cf71cf;
+}
+
+.btn-jumga:focus,
+.btn-jumga.focus {
+  box-shadow: 0 0 0 0.2rem rgba(177, 28, 177, 0.5);
+}
+
+.btn-jumga.disabled,
+.btn-jumga:disabled {
+  color: #fff;
+  background-color: #b11cb1;
+  border-color: #b11cb1;
+}
+
+.btn-jumga:not(:disabled):not(.disabled):active,
+.btn-jumga:not(:disabled):not(.disabled).active,
+.show > .btn-jumga.dropdown-toggle {
+  color: #fff;
+  background-color: #b11cb1;
+  border-color: #c723c7;
+}
+
+.btn-jumga:not(:disabled):not(.disabled):active:focus,
+.btn-jumga:not(:disabled):not(.disabled).active:focus,
+.show > .btn-jumga.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(177, 28, 177, 0.5);
+}
+
+@media (max-width: 420px) {
+  #login-container,
+  #signup-container {
+    width: 90%;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 740px) {
+  #login-container,
+  #signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+/* ACTIVATION BOX  */
+
+.activation-container {
+  /* width: 300px; */
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.activation-container div {
+  width: 300px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+  background-color: #e6b043;
+}
+
+.bg-jumga {
+  background-color: #8d078e;
+}
+.text-jumga {
+  color: #8d078e;
+}

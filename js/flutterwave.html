@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="./vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="row m-5">
+        <div class="col-sm">
+            <h1 class="text-center">JUMGA</h1>
+        </div>
+        <div class="col-sm">
+            <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+                <input type="hidden" name="public_key" value="FLWPUBK_TEST-SANDBOXDEMOKEY-X" />
+                <input type="hidden" name="customer[email]" value="jessepinkman@walterwhite.org" />
+                <input type="hidden" name="customer[phone_number]" value="0900192039940" />
+                <input type="hidden" name="customer[name]" value="Jesse Pinkman" />
+                <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+                <input type="hidden" name="amount" value="200" />
+                <input type="hidden" name="currency" value="NGN" />
+                <input type="hidden" name="meta[token]" value="54" />
+                <input type="hidden" name="redirect_url" value="http://localhost/jumga/pay.html" />
+                
+                <button type="submit">CHECKOUT</button> 
+              </form>
+        </div>
+    </div>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./js/sydeestack.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
